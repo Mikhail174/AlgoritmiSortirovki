@@ -36,6 +36,7 @@ namespace quicksort2
              if (left < right)
             {
                 int pivot = Partition(arr, left, right);
+                Console.WriteLine("Pivot In QuickSort() = " + pivot);
 
                 if (pivot > 1)
                 {
@@ -45,6 +46,8 @@ namespace quicksort2
                 {
                     Quick_Sort(arr, pivot + 1, right);
                 }
+
+                
             }
 
             Console.WriteLine("Промежуточное значение Quick_Sort ");
