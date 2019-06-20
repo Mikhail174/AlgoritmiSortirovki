@@ -10,6 +10,7 @@ namespace quicksort2
     {
         static void Main(string[] args)
         {
+
             int[] arr = new int[] { 51,95,66,72,38,39,41,15 };
 
             Console.WriteLine("Original array : ");
@@ -32,7 +33,7 @@ namespace quicksort2
         }
         private static void Quick_Sort(int[] arr, int left, int right)
         {
-            if (left < right)
+             if (left < right)
             {
                 int pivot = Partition(arr, left, right);
 
@@ -69,7 +70,7 @@ namespace quicksort2
                     left++;
                 }
 
-                while (arr[right] > pivot)
+                 while (arr[right] > pivot)
                 {
                     right--;
                 }
@@ -81,7 +82,7 @@ namespace quicksort2
                     int temp = arr[left];
                     arr[left] = arr[right];
                     arr[right] = temp;
-
+                    
 
                 }
                 else
