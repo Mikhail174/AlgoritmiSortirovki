@@ -31,20 +31,19 @@ namespace quicksort2
             }
             Console.WriteLine();
         }
-        private static void Quick_Sort(int[] arr, int left, int right)
+        private static void Quick_Sort(int[] arr, int qs_left, int qs_right)
         {
-             if (left < right)
+             if (qs_left < qs_right)
             {
-                int pivot = Partition(arr, left, right);
-                Console.WriteLine("Pivot In QuickSort() = " + pivot);
+                int pivot = Partition(arr, qs_left, qs_right);
 
                 if (pivot > 1)
                 {
-                    Quick_Sort(arr, left, pivot - 1);
+                    Quick_Sort(arr, qs_left, pivot - 1);
                 }
-                if (pivot + 1 < right)
+                if (pivot + 1 < qs_right)
                 {
-                    Quick_Sort(arr, pivot + 1, right);
+                    Quick_Sort(arr, pivot + 1, qs_right);
                 }
 
                 
@@ -60,37 +59,37 @@ namespace quicksort2
             Console.WriteLine();
 
         }
-        private static int Partition(int[] arr, int left, int right)
+        private static int Partition(int[] arr, int p_left, int p_right)
         {
-            int pivot = arr[left];
+            int pivot = arr[p_left];
             
 
             while (true)
             {
                 Console.WriteLine("Pivot=" + pivot);
-                while (arr[left] < pivot)
+                while (arr[p_left] < pivot)
                 {
-                    left++;
+                    p_left++;
                 }
 
-                 while (arr[right] > pivot)
+                 while (arr[p_right] > pivot)
                 {
-                    right--;
+                    p_right--;
                 }
 
-                if (left < right)
+                if (p_left < p_right)
                 {
-                    if (arr[left] == arr[right]) return right;
+                    if (arr[p_left] == arr[p_right]) return p_right;
 
-                    int temp = arr[left];
-                    arr[left] = arr[right];
-                    arr[right] = temp;
+                    int temp = arr[p_left];
+                    arr[p_left] = arr[p_right];
+                    arr[p_right] = temp;
                     
 
                 }
                 else
                 {
-                    return right;
+                    return p_right;
                 }
 
                 Console.WriteLine("Промежуточное значение Partition ");
