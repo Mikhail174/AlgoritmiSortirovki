@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bubble sort", "Bubble sort\Bubble sort.csproj", "{AB908B54-CE9B-4DDE-9009-99E2E633749F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBubbleSort", "MyBubbleSort\MyBubbleSort.csproj", "{B9887E4F-F6EE-4D0C-B747-7AA4EB99EC84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quicksort2", "quicksort2\quicksort2.csproj", "{D4498786-C9C0-4269-9467-6D2E8B11B148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{6426FAA8-1161-4DC7-9A85-3C8A8324986B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB908B54-CE9B-4DDE-9009-99E2E633749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB908B54-CE9B-4DDE-9009-99E2E633749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB908B54-CE9B-4DDE-9009-99E2E633749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB908B54-CE9B-4DDE-9009-99E2E633749F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B9887E4F-F6EE-4D0C-B747-7AA4EB99EC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B9887E4F-F6EE-4D0C-B747-7AA4EB99EC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9887E4F-F6EE-4D0C-B747-7AA4EB99EC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{D4498786-C9C0-4269-9467-6D2E8B11B148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4498786-C9C0-4269-9467-6D2E8B11B148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4498786-C9C0-4269-9467-6D2E8B11B148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6426FAA8-1161-4DC7-9A85-3C8A8324986B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6426FAA8-1161-4DC7-9A85-3C8A8324986B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6426FAA8-1161-4DC7-9A85-3C8A8324986B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6426FAA8-1161-4DC7-9A85-3C8A8324986B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
